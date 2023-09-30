@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+#header {
+  background-color: rgb(75, 75, 195);
+}
+#text {
+  color: white;
+
+  text-align: center;
+}
+#text h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+#text h4 {
+  font-size: 20px;
+}
+
+#text {
+}
+#text .text-container {
+  position: relative;
+  left: 100%;
+  width: 500px;
+  margin-top: -30%;
+}
+
+#header ul {
+  border-bottom: red;
+}
+
+.nav {
+  text-align: center;
+}
+.nav li {
+  display: inline-block;
+  margin-right: 50px;
+}
+.nav li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #333; /* Màu chữ (tuỳ chọn) */
+  font-weight: bold; /* Độ đậm của chữ (tuỳ chọn) */
+  line-height: 46px;
+}
+
+.nav li a {
+  text-decoration: none; /* Loại bỏ gạch chân mặc định */
+  border-bottom: 2px solid #6378c7;
+  color: #000; /* Màu chữ (tuỳ chọn) */
+}
+.nav > li:hover > a {
+  font-size: 19px;
+  color: white;
+}
+
+/* Hover effect (hiệu ứng khi di chuột qua) */
+.nav li a:hover {
+  border-bottom: 2px solid blue; /* Màu đường kẻ khi di chuột qua (tuỳ chọn) */
+}
+
+#main {
+  position: relative;
+  height: 100vh;
+  background: url('/assets/img/backgr.jpg') top center / cover no-repeat;
+}
+#text {
+  width: 450px;
+  position: absolute;
+  top: 50%;
+}
+#text span {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+  font-weight: bolder;
+}
+.logo {
+  width: 270px; /* Độ rộng của hình tròn */
+  height: 270px; /* Độ cao của hình tròn (cùng giá trị với width để tạo hình tròn) */
+  border-radius: 50%; /* Để tạo hình tròn, sử dụng border-radius với giá trị 50% */
+  color: white; /* Màu chữ bên trong hình tròn (tuỳ chọn) */
+  margin-left: 40%;
+  margin-top: 0%;
+}
+.backgrmain {
+  position: absolute;
+  width: 400px;
+}
+.character {
+  top: 54%;
+  position: absolute;
+  height: 350px;
+  right: 75%;
+}
+.character2 {
+  right: 1%;
+  top: 54%;
+  position: absolute;
+  height: 350px;
+}
+.button-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 20%;
+  left: 35%;
+  width: 400px;
+}
+
+@keyframes changeColor {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    #0cc8cb 0%,
+    #37577d 50%,
+    #6b936b 50%,
+    #5f3fc9 100%
+  );
+  background-size: 200% 100%;
+  animation: changeColor 3s infinite;
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 50px;
+}
+
+/* styles.css */
+
+.button a {
+  font-size: 18px; /* Kích thước font lớn hơn */
+  font-weight: bold; /* In đậm chữ */
+  color: #000;
+}
+
+.button2 {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #fff; /* Đổi màu chữ thành trắng */
+  background: linear-gradient(
+    90deg,
+    #37577d 0%,
+    /* Màu bắt đầu */ #ae7235 50%,
+    /* Màu ở giữa */ #6b936b 50%,
+    /* Màu ở giữa */ #5f3fc9 100% /* Màu kết thúc */
+  );
+  animation: changeColor 3s infinite;
+  background-size: 200% 100%;
+  transition: background-position 0.5s;
+  border-radius: 50px;
+  right: 76%;
+}
+.button2 a {
+  font-size: 18px; /* Kích thước font lớn hơn */
+  font-weight: bold; /* In đậm chữ */
+  color: #000;
+}
+.sub-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 33%;
+  font-size: 10px;
+  bottom: 55%;
+}
+.fanpage {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 1px solid #000;
+  text-decoration: none;
+  margin-bottom: 15px;
+  color: #fff; /* Đổi màu chữ thành trắng */
+  background: linear-gradient(
+    90deg,
+    #b0e0e6 0%,
+    /* Màu xanh nhạt bắt đầu */ #87ceeb 50%,
+    /* Màu xanh nhạt ở giữa */ #1e90ff 100% /* Màu xanh nhạt kết thúc */
+  );
+}
+.group {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #fff; /* Đổi màu chữ thành trắng */
+  background: linear-gradient(
+    90deg,
+    #009900 0%,
+    /* Màu xanh đậm bắt đầu */ #33cc33 50%,
+    /* Màu xanh đậm ở giữa */ #66cc33 100% /* Màu xanh đậm kết thúc */
+  );
+  background-size: 200% 100%;
+  transition: background-position 0.5s;
+  margin-bottom: 15px;
+  right: 45%;
+}
+.youtube {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #fff; /* Đổi màu chữ thành trắng */
+  background: linear-gradient(
+    90deg,
+    #aa4d4d 0%,
+    /* Màu đỏ bắt đầu */ #cc0000 50%,
+    /* Màu đỏ ở giữa */ #990000 100% /* Màu đỏ kết thúc */
+  );
+  background-size: 200% 100%;
+  transition: background-position 0.5s;
+  margin-bottom: 15px;
+  right: 45%;
+}
+.discord {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #fff; /* Đổi màu chữ thành trắng */
+  background: linear-gradient(
+    90deg,
+    #16167f 0%,
+    /* Màu xanh đậm bắt đầu */ #0000cd 50%,
+    /* Màu xanh đậm ở giữa */ #465ea5 100% /* Màu xanh đậm kết thúc */
+  );
+  background-size: 200% 100%;
+  transition: background-position 0.5s;
+  margin-bottom: 15px;
+  right: 45%;
+}
+.sub-button a {
+  color: black;
+  font-size: 15px; /* Kích thước font lớn hơn */
+  font-weight: bold; /* In đậm chữ */
+}
+.sub-button a i {
+  font-size: 20px;
+}
+/* Hiệu ứng màu sắc khi di chuột qua */
+.sub-button .fanpage:hover {
+  background: linear-gradient(90deg, #b0e0e6 0%, #87ceeb 50%, #1e90ff 100%);
+}
+
+.sub-button .group:hover {
+  background: linear-gradient(90deg, #009900 0%, #33cc33 50%, #66cc33 100%);
+}
+
+.sub-button .youtube:hover {
+  background: linear-gradient(90deg, #ff0000 0%, #cc0000 50%, #990000 100%);
+}
+
+.sub-button .discord:hover {
+  background: linear-gradient(90deg, #00008b 0%, #0000cd 50%, #4169e1 100%);
+}
+#footer {
+}

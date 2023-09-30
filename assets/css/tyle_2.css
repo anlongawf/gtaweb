@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+#text {
+  color: white;
+  position: relative;
+  top: 25%;
+  width: 380px;
+  text-align: center;
+}
+#text h3 {
+  font-size: 30px;
+}
+
+#text h4 {
+  margin-top: 10px;
+}
+
+#text {
+}
+#text .text-container {
+}
+.nav {
+  text-align: center;
+}
+.nav li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.nav li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #333; /* Màu chữ (tuỳ chọn) */
+  font-weight: bold; /* Độ đậm của chữ (tuỳ chọn) */
+  line-height: 46px;
+}
+
+.nav li a {
+  text-decoration: none; /* Loại bỏ gạch chân mặc định */
+  border-bottom: 2px solid #6378c7;
+  color: #000; /* Màu chữ (tuỳ chọn) */
+}
+.nav > li:hover > a {
+  font-size: 19px;
+  color: white;
+}
+#main {
+  position: relative;
+  height: 100vh;
+  background: url('/assets/img/backgr.jpg') top center / cover no-repeat;
+}
+.logo {
+  width: 300px; /* Độ rộng của hình tròn */
+  height: 300px; /* Độ cao của hình tròn (cùng giá trị với width để tạo hình tròn) */
+  border-radius: 50%; /* Để tạo hình tròn, sử dụng border-radius với giá trị 50% */
+  left: 15%;
+  top: 5%;
+  position: absolute;
+}
+.character {
+  top: 80%;
+  position: absolute;
+  height: 150px;
+  right: 60%;
+}
+.character2 {
+  left: 65%;
+  top: 80%;
+  position: absolute;
+  height: 150px;
+}
+
+@keyframes changeColor {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.button-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 30%;
+  left: 25%;
+  width: 200px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    #0cc8cb 0%,
+    #37577d 50%,
+    #6b936b 50%,
+    #5f3fc9 100%
+  );
+  background-size: 200% 100%;
+  animation: changeColor 3s infinite;
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 50px;
+}
+
+/* styles.css */
+
+.button a {
+  font-size: 18px; /* Kích thước font lớn hơn */
+  font-weight: bold; /* In đậm chữ */
+  color: #000;
+}
+
+.button2 {
+  padding: 10px 20px;
+  display: inline-block;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #fff; /* Đổi màu chữ thành trắng */
+  background: linear-gradient(
+    90deg,
+    #37577d 0%,
+    /* Màu bắt đầu */ #ae7235 50%,
+    /* Màu ở giữa */ #6b936b 50%,
+    /* Màu ở giữa */ #5f3fc9 100% /* Màu kết thúc */
+  );
+  animation: changeColor 3s infinite;
+  background-size: 200% 100%;
+  transition: background-position 0.5s;
+  border-radius: 50px;
+  right: 76%;
+}
+.button2 a {
+  font-size: 18px; /* Kích thước font lớn hơn */
+  font-weight: bold; /* In đậm chữ */
+  color: #000;
+}
